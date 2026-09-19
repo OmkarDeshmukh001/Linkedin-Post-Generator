@@ -142,6 +142,7 @@ def main():
     col1, col2, col3 = st.columns(3)
 
     with col1:
+
         st.markdown("**Language**")
         st.info(style_profile["language"])
 
@@ -151,7 +152,14 @@ def main():
         st.markdown("**Emoji Usage**")
         st.info(style_profile["emoji_usage"])
 
+        st.markdown("**Sentence Style**")
+        st.info(style_profile["sentence_style"])
+
+        st.markdown("**Humor Style**")
+        st.info(style_profile["humor_style"])
+
     with col2:
+
         st.markdown("**Tone**")
         st.info(style_profile["tone"])
 
@@ -161,12 +169,19 @@ def main():
         st.markdown("**Hook Style**")
         st.info(style_profile["hook_style"])
 
+        st.markdown("**Directness**")
+        st.info(style_profile["directness"])
+
     with col3:
+
         st.markdown("**Structure**")
         st.info(style_profile["structure"])
 
         st.markdown("**CTA Style**")
         st.info(style_profile["cta_style"])
+
+        st.markdown("**Storytelling Style**")
+        st.info(style_profile["storytelling_style"])
 
         st.markdown("**Posts Analyzed**")
         st.info(str(len(processed_posts)))
